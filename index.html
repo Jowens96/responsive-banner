@@ -4,16 +4,27 @@
   <meta charset="utf-8">
   <title>Responsive Banner</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
-  <section>
-    <img src="images/earth-horizon.jpg" alt="">
-    <div class="textcontent">
-      <h1>The Planet Earth</h1>
+  <figure class="push-0">
+    <div class="embed embed-4by3">
+      <img class="embed-item img img-flex" src="images/earth-horizon.jpg" alt="">
+    </div>
+  </figure>
+
+  <section class="grid">
+    <div class="textcontent unit grid-middle wrapper xs-1 s-1 m-1-2 l-1-2">
+      <h1 class="yotta">The Planet Earth</h1>
       <p>An amazingly species rich, varied climate planet, the third, and only habitable, planet in the Solar System, located about 25 000 ly from the Galactic Centre.</p>
-      <a href="#">Book a star cruise</a>
+    </div>
+
+    <div class="unit xs-1 s-1 m-1-2 l-1-4">
+      <a href="#" class="btn btn-info btn-ghost mega" role="button">Book a star cruise</a>
     </div>
   </section>
 
